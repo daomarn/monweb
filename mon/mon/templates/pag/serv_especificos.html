@@ -1,0 +1,38 @@
+{% extends "base4.html" %}
+<HEAD>
+        <TITLE>{% block titulo %}Servicios{% endblock %}</TITLE>
+</HEAD>
+{%block content%}
+<hr class="featurette-divider"><hr>
+<img class="featurette-image pull-right" src="/media/bootstrap/img/{{serv.servicio.nombre}}_letras.jpg">
+<div class="container-fluid">
+  <h1>{{serv.nombre}}</h1>
+  <div class="row-fluid">
+    <div class="span9 span-fixed-sidebar">
+      <div class="hero-unit">
+        <h2>En que consiste el servicio?</h2>
+	<p>{{serv.n_q_consiste}}</p>
+        <h2> Que aporta?</h2>
+        <p>{{serv.q_aporta}}</p>
+        <h2> Que se espera obtener?</h2>
+        <p>{{serv.alcance}}</p>
+      </div>        
+    </div><!--/span-->  
+    <div class="span3">
+      <div class="sidebar-nav-fixed" id="rightSidebar" data-spy="affix" data-offset-top="400">
+        <div class="well">         
+          <ul class="nav nav-list">
+	    {%for srv in servicios%}
+              <li><a href="/{{srv.nombre}}">{{srv.nombre_completo}}</a></li>
+            {%endfor%}  <br>
+            <li class="nav-header">Servicios</li>
+	    {%for srv in servs%}
+              <li><a href="/serv_especificos/{{srv.id}}">{{srv.nombre}}</a></li>
+            {%endfor%}
+	  </ul>
+	</div>
+      </div><!--/span-->
+    </div><!--/row-->
+  </div>
+</div>
+{%endblock%}

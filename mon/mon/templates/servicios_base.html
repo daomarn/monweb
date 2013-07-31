@@ -1,0 +1,26 @@
+{% extends "base1.html" %}
+<HEAD>
+        <TITLE>{% block titulo %}{% endblock %}</TITLE>
+</HEAD>
+{% block content %}
+<SECTION>
+<div class="container-fluid">
+  <div class="row-fluid">
+	{% block servicio %}{% endblock %}
+    <div class="span8">
+      {% block serv_especifico %}{% endblock %}
+      En que consiste el servicio?
+      {%block que%}{% endblock %}
+      Que aporta?
+      {%block aporta%}{% endblock %}
+    </div>
+    <div class="span4">
+    
+    </div>
+
+</SECTION>
+{%endblock%}
+<fieldset>
+<legeng><h2>Pricing</h2></legend>
+<div class="row">
+

@@ -1,0 +1,69 @@
+{%extends 'base1.html'%}
+{%block title%}MindsOverNet{%endblock%}
+{%block content%}
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="/media/bootstrap/img/{{servicios.0.nombre}}1.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{servicios.0.nombre_completo}}</h1>
+              <p class="lead">{{servicios.0.descrip_corta}}</p>              
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/media/bootstrap/img/{{servicios.1.nombre}}s.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{servicios.1.nombre_completo}}</h1>
+              <p class="lead">{{servicios.1.descrip_corta}}</p>             
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="/media/bootstrap/img/{{servicios.2.nombre}}.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>{{servicios.2.nombre_completo}}</h1>
+              <p class="lead">{{servicios.2.descrip_corta}}</p>            
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">></a>
+    </div><!-- /.carousel -->
+
+    <div class="container marketing">
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="/media/bootstrap/img/{{servicios.2.nombre}}1.png">
+        <h2 class="featurette-heading">{{servicios.2.nombre_completo}}. <span class="muted">Servicios en Internet.</span></h2>
+        <p class="lead">{{servicios.2.descrip_larga}}</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="/media/bootstrap/img/{{servicios.1.nombre}}s1.png">
+        <h2 class="featurette-heading">{{servicios.1.nombre_completo}}. <span class="muted">Movilidad e interaccion.</span></h2>
+        <p class="lead">{{servicios.1.descrip_larga}}</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="/media/bootstrap/img/{{servicios.0.nombre}}.jpg">
+        <h2 class="featurette-heading">{{servicios.0.nombre_completo}}. <span class="muted">Interactividad en TV.</span></h2>
+        <p class="lead">{{servicios.0.descrip_larga}}</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+    </div>
+
+{% endblock %}  

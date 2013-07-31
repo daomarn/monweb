@@ -1,0 +1,19 @@
+*** Starting uWSGI 1.9.13 (32bit) on [Mon Jul 15 21:57:25 2013] ***
+compiled with version: 4.6.3 on 15 July 2013 21:56:21
+os: Linux-3.2.0-38-generic-pae #61-Ubuntu SMP Tue Feb 19 12:39:51 UTC 2013
+nodename: controller
+machine: i686
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /root/project/mon/mon
+detected binary path: /usr/local/bin/uwsgi
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your processes number limit is 7892
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+uwsgi socket 0 bound to UNIX address /tmp/my.sock fd 3
+Python version: 2.7.3 (default, Apr 10 2013, 06:03:17)  [GCC 4.6.3]
+Set PythonHome to /root/project/mon/mon/apps/pag
+ImportError: No module named site

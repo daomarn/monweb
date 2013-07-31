@@ -1,0 +1,13 @@
+{% extends "base1.html" %}
+<HEAD>
+        <TITLE>{% block titulo %} {{}} {% endblock %}</TITLE>
+</HEAD>
+{% block content %}
+<SECTION>
+        {% block servicio %}
+        {% endblock %}
+</SECTION>
+<fieldset>
+<legeng><h2>Pricing</h2></legend>
+<div class="row">
+

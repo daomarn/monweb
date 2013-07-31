@@ -1,0 +1,30 @@
+{%extends 'base4.html'%}
+{% block title %}Servicios{% endblock %}
+{%block content%}
+
+
+
+<div class="container-fluid">
+	<div class= "row-fluid">
+		<div class="span12">
+			<div class="hero-unit">
+<br><br>
+<div id="legend">
+<legend><h2>Servicios</h2></legend>
+</div>
+<div class="row">
+	{% for ser in servicios %}		
+		<div class="span4"><h3>{{ser.nombre_completo}}</h3>
+		<img src="/media/bootstrap/img/{{ser.nombre}}_icon.png" class="img-rounded">
+		<p>{{ser.descrip_larga}}</p>		
+		<form action="." method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="servicio" value="{{ser.nombre}}"></input>
+		<input type="submit" class="btn btn-primary" value="Saber mas"></input>
+                </form></div>
+	{%endfor%}
+</div>
+</div>
+</div>
+</div>
+{%endblock%}
